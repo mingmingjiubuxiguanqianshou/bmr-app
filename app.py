@@ -37,4 +37,17 @@ st.divider()
 st.subheader("🎯 饮食行动指南：") 
 st.success(f"🏃‍♂️ 想要减脂：每天摄入约 **{tdee_result - 500:.0f}** 千卡") 
 st.info(f"⚖️ 想要维持：每天摄入约 **{tdee_result:.0f}** 千卡") 
-st.warning(f"💪 想要增肌：每天摄入约 **{tdee_result + 300:.0f}** 千卡")
+st.warning(f"💪 想要增肌：每天摄入约 **{tdee_result + 300:.0f}** 千卡") 
+
+# ==========================================
+# 👇 下面是新加的签名代码 👇
+# ==========================================
+st.divider() # 加一条分割线，和上面的计算结果隔开
+
+# 使用 markdown 的 HTML 语法来调整颜色，让签名看起来低调不喧宾夺主
+# 你可以把“你的名字/昵称”改成你想要的任何字！
+st.markdown(
+    '<p style="text-align: center; color: #9e9e9e; font-size: 14px;">'
+    '✨ Made with ❤️ by <b>铭铭就</b> ✨</p>', 
+    unsafe_allow_html=True
+)
